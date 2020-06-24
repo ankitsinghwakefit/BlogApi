@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 var { hash, compare } = require("bcryptjs");
-console.log("inside user");
 var userSchema = new Schema(
 	{
 		username: {

@@ -8,23 +8,22 @@ var indexRouter = require("./routes/index");
 var v1Router = require("./routes/v1/index.js");
 var profilesRouter = require("./routes/v1/profiles.js");
 var articlesRouter = require("./routes/v1/articles");
-require("dotenv").config();
+//require("dotenv").config();
 
-// mongoose.connect(
-// 	process.env.DBURL,
-// 	{
-// 		useNewUrlParser: true,
-// 		useUnifiedTopology: true,
-// 		useFindAndModify: false
-// 	},
-// 	err => {
-// 		console.log(err ? err : "Connected...");
-// 	}
-// );
-mongoose.connect('mongodb://localhost:27017/reddit',
-{ useNewUrlParser: true },()=>{
-  console.log("DataBase connected...")
-});
+mongoose.connect(
+	'mongodb+srv://Wake_007:Wakefitt@007@cluster0-hyxpk.mongodb.net/users?retryWrites=true&w=majority',
+	{
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	},
+	err => {
+		console.log(err ? err : "Connected...");
+	}
+);
+// mongoose.connect('mongodb://localhost:27017/reddit',
+// { useNewUrlParser: true },()=>{
+//   console.log("DataBase connected...")
+// });
 
 var app = express();
 mongoose.set("useCreateIndex", true);
