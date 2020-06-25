@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-	res.json("Welcome to conduit API");
+	res.json("Welcome to ShipThis API");
 });
 
 module.exports = router;
