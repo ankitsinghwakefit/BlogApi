@@ -2,7 +2,6 @@
 The above code is deployed on Heroku and can be accessed using https://shipthis.herokuapp.com/ and endpoints can be hit using postman also as per the request type(GET, POST, PUT, DELETE) targeted.
 
 Here is the list of all implemented requests.
-Content-Type : application/json  (to be set in postman header)
 
 First End-Point - To test
     METHOD : GET,
@@ -68,3 +67,7 @@ Eighth End-Point - Get user details
     Method: GET,
     LINK: https://shipthis.herokuapp.com/api/v1/user
     Headers : authorization : WRITE THE TOKEN GENERATED IN RESPONSE 
+
+**
+Content-Type : application/json  (to be set in postman header)
+Slug : generated after creating any article
